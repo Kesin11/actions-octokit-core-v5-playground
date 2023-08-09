@@ -10,11 +10,9 @@ jobs:
         octokit-core-version: ["4.2.4", "5.0.0"]
     steps:
       - uses: actions/checkout@v3
-      - name: Show nodejs version
-        run: node --version
 
       - name: Override octokit/core version and install deps
-        run: npm i "@octokit/core@${{ matrix.octokit-core-version }}"
+        run: npm i --save-exact "@octokit/core@${{ matrix.octokit-core-version }}"
       - name: Rebundle own action
         run: npm run bundle
 

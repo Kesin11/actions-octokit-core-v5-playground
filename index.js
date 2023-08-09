@@ -1,6 +1,8 @@
 const { Octokit } = require("@octokit/core");
 
 async function run() {
+  console.log("Node version:", process.version)
+
   const token = process.env.GITHUB_TOKEN
   if (!token) throw new Error("GITHUB_TOKEN is undefined")
 
