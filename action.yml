@@ -1,0 +1,13 @@
+name: 'actions-octokit-core-v5-playground'
+description: '@octokit/coreをv5.0.0にしたらnode16のGitHub Actionsランナーだと動かない説の検証用'
+# inputs:
+#   milliseconds:  # id of input
+#     description: 'number of milliseconds to wait'
+#     required: true
+#     default: '1000'
+# outputs:
+#   time: # output will be available to future steps
+#     description: 'The current time after waiting'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
