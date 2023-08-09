@@ -4,7 +4,7 @@
   "description": "@octokit/coreをv5.0.0にしたらnode16のGitHub Actionsランナーだと動かない説の検証用",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle": "esbuild index.js --bundle --outfile=dist/index.js"
   },
   "author": "kesin1202000@gmail.com",
   "license": "MIT",
