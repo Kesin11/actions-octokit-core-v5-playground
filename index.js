@@ -8,8 +8,8 @@ async function run() {
 
   const octokit = new Octokit({ auth: token })
 
-  console.log("GET /user")
-  const res = await octokit.request("GET /user")
+  console.log("GET /repos/Kesin11/actions-octokit-core-v5-playground")
+  const res = await octokit.request("GET /repos/Kesin11/actions-octokit-core-v5-playground")
   console.dir(res.data)
 }
 
