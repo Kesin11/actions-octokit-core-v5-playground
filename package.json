@@ -4,7 +4,7 @@
   "description": "@octokit/coreをv5.0.0にしたらnode16のGitHub Actionsランナーだと動かない説の検証用",
   "main": "index.js",
   "scripts": {
-    "bundle": "esbuild index.js --bundle --outfile=dist/index.js"
+    "bundle": "ncc build index.js --out=dist"
   },
   "author": "kesin1202000@gmail.com",
   "license": "MIT",
@@ -12,6 +12,6 @@
     "@octokit/core": "^5.0.0"
   },
   "devDependencies": {
-    "esbuild": "^0.19.0"
+    "@vercel/ncc": "^0.36.1"
   }
 }
