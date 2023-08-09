@@ -6,6 +6,7 @@ jobs:
   call-own-action:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         octokit-core-version: ["4.2.4", "5.0.0"]
     steps:
