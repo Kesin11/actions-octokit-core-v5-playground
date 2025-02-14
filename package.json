@@ -9,7 +9,7 @@
   "author": "kesin1202000@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "@octokit/core": "^5.0.0"
+    "@octokit/core": "^6.1.4"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.36.1"
